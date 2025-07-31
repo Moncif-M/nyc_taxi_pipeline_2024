@@ -1,4 +1,7 @@
 
-nyc_taxi_2024_pipeline/target/
-nyc_taxi_2024_pipeline/dbt_packages/
-nyc_taxi_2024_pipeline/logs/
+dags/dbt/target/
+dags/dbt/dbt_packages/
+dags/dbt/logs/
+venv/
+logs/
+.astro/
