@@ -1,0 +1,49 @@
+models :
+  - name : fact_trip
+    columns : 
+     - name : vendor_id
+       data_tests :
+        - relationships :
+            to : ref('dim_vendor')
+            field : 'vendor_id'
+     - name : pickup_time_id
+       data_tests :
+        - relationships :
+            to : source('taxi','dim_time')
+            field : 'time_id'
+     - name : dropoff_time_id
+       data_tests :
+        - relationships :
+            to : source('taxi','dim_time')
+            field : 'time_id'
+     - name : date_id
+       data_tests :
+        - relationships :
+            to : source('taxi','dim_date')
+            field : 'date_id'
+            config : 
+              severity :  warn
+     - name : ratecode_id
+       data_tests :
+        - relationships :
+            to : ref('dim_ratecode')
+            field : 'ratecode_id'
+     - name : pulocation_id
+       data_tests :
+        - relationships :
+            to : ref('dim_location')
+            field : 'location_id'
+     - name : dolocation_id
+       data_tests :
+        - relationships :
+            to : ref('dim_location')
+            field : 'location_id'
+     - name : payment_id
+       data_tests :
+        - relationships :
+            to : ref('dim_payment')
+            field : 'payment_id'
+     - name : tip_amount
+       data_tests :
+        - is_positive 
+

@@ -1,0 +1,51 @@
+[0m00:04:02.438358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcdeba1b380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcded1f1a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcdea831d10>]}
+
+
+============================== 00:04:02.443921 | 0e3465eb-d91d-4399-9a49-6ca82bf8fc39 ==============================
+[0m00:04:02.443921 [info ] [MainThread]: Running with dbt=1.10.4
+[0m00:04:02.444558 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/Viber/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt init', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:04:24.573293 [debug] [MainThread]: Starter project path: /home/Viber/taxi_snowflake/venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m00:04:24.576279 [info ] [MainThread]: 
+Your new dbt project "nyc_taxi_2024_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:04:24.576883 [info ] [MainThread]: Setting up your profile.
+[0m00:07:19.572535 [info ] [MainThread]: Profile nyc_taxi_2024_pipeline written to /home/Viber/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m00:07:19.739653 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 197.38255, "process_in_blocks": "5704", "process_kernel_time": 0.157475, "process_mem_max_rss": "125032", "process_out_blocks": "80", "process_user_time": 1.896017}
+[0m00:07:19.740786 [debug] [MainThread]: Command `dbt init` succeeded at 00:07:19.740601 after 197.38 seconds
+[0m00:07:19.741287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcde9218510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcdeafa39b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcde93f07c0>]}
+[0m00:07:19.741738 [debug] [MainThread]: Flushing usage events
+[0m00:07:21.460254 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:07:41.904865 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bdcd3b380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bde3f1a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bdbb51d10>]}
+
+
+============================== 00:07:41.910568 | e749f7c9-446c-4d3d-bb9d-ee0a3dd210e4 ==============================
+[0m00:07:41.910568 [info ] [MainThread]: Running with dbt=1.10.4
+[0m00:07:41.911406 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/Viber/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:07:41.928878 [info ] [MainThread]: dbt version: 1.10.4
+[0m00:07:41.929388 [info ] [MainThread]: python version: 3.13.5
+[0m00:07:41.929803 [info ] [MainThread]: python path: /home/Viber/taxi_snowflake/venv/bin/python
+[0m00:07:41.930184 [info ] [MainThread]: os info: Linux-6.15.4-arch2-1-x86_64-with-glibc2.41
+[0m00:07:42.297991 [info ] [MainThread]: Using profiles dir at /home/Viber/.dbt
+[0m00:07:42.298539 [info ] [MainThread]: Using profiles.yml file at /home/Viber/.dbt/profiles.yml
+[0m00:07:42.299154 [info ] [MainThread]: Using dbt_project.yml file at /home/Viber/taxi_snowflake/dbt_project.yml
+[0m00:07:42.299929 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m00:07:42.301160 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.46286318, "process_in_blocks": "13536", "process_kernel_time": 0.164037, "process_mem_max_rss": "125880", "process_out_blocks": "8", "process_user_time": 1.898747}
+[0m00:07:42.302156 [debug] [MainThread]: Command `dbt debug` failed at 00:07:42.301978 after 0.46 seconds
+[0m00:07:42.302656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bda47a2c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bda4a9010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6bda440c00>]}
+[0m00:07:42.303207 [debug] [MainThread]: Flushing usage events
+[0m00:07:43.073567 [debug] [MainThread]: An error was encountered while trying to flush usage events

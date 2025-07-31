@@ -1,0 +1,14 @@
+sources :
+ - name : taxi
+   database : db_taxi
+   schema : taxi
+   tables :
+    - name : yellow_taxi_trip
+      columns :
+        - name : ratecodeid 
+          data_tests:
+            - accepted_values:
+                values : [1,2,3,4,5,6,99]
+    - name : taxi_zone_lookup
+    - name : dim_date
+    - name : dim_time

@@ -1,4 +1,4 @@
 
-target/
-dbt_packages/
-logs/
+nyc_taxi_2024_pipeline/target/
+nyc_taxi_2024_pipeline/dbt_packages/
+nyc_taxi_2024_pipeline/logs/
