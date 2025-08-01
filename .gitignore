@@ -5,3 +5,5 @@ dags/dbt/logs/
 venv/
 logs/
 .astro/
+.env
+logs/
