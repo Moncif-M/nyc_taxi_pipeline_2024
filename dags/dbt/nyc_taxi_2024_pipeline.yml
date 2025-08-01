@@ -1,4 +1,4 @@
-my_project:
+nyc_taxi_2024_pipeline:
   target: dev
   outputs:
     dev:
