@@ -14,7 +14,7 @@ env :
 
 jobs :
   dbt_ci :
-    runs_on : ubuntu-latest
+    runs-on : ubuntu-latest
     defaults :
      run :
       working-directory : ./dbt
