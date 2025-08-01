@@ -6,4 +6,3 @@ venv/
 logs/
 .astro/
 .env
-logs/
